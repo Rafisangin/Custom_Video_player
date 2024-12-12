@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Custom Video Player</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+
+    <div class="myplayer">
+        <video src="video/9-demo-of-custom-player.mp4"></video>
+
+        <div class="myplayer__controls">
+            <div class="controls__progressbar">
+                <input class="controls__progressbar-current" type="range" min="1" max="100" step="1" value="0">
+            </div>
+
+            <div class="controls__btns">
+                <div class="left">
+                    <div class="btns play">
+                        <i class="icon ion-md-play"><button type="button" onclick="playVideo()"><img id="full"
+                                    src="icons/play-button-arrowhead.png" alt="" srcset=""></button></i>
+
+
+                    </div>
+                    <div class="btns rewind">
+                        <i class="icon ion-md-rewind"><button type="button" onclick="rewindVideo()"><img id="full"
+                                    src="icons/rewind.png" alt="" srcset=""></button></i>
+                    </div>
+                    <div class="btns forward">
+                        <i class="icon ion-md-fastforward"><button type="button" onclick="forwardVideo()"><img id="full"
+                                    src="icons/fast-forward (1).png" alt="" srcset=""></button></i>
+                    </div>
+                    <div class="timer">
+                        <span class="currentTime">00:00</span>
+                        <span>/</span>
+                        <span class="videoTime">00:00</span>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="btns volume">
+                        <i class="icon ion-md-volume-high"> <button type="button"><img id="icons" src="icons/volume.png"
+                                    alt="" srcset=""></button></i>
+                                    <div class="volume__progress">
+                                        <input id="volume_bar" type="range" min="1" max="100" step="1" value="50" >
+                                    </div>
+                    </div>
+                </div>
+                <div class="btns fullscreen">
+                    <i class="icon ion-md-expand"><button type="button" ><img id="full" src="icons/full-screen.png"
+                                alt="" srcset=""></button></i>
+                                 
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
